@@ -59,7 +59,6 @@ public class PlayerShieldOverlay implements IGuiOverlay {
         RenderUtils.renderBar(guiGraphics, 37, height - 25, 96, 6, AssetsManager.SHIELD_BORDER, ShieldUtil.getShieldTypeByValue(max), shield, max, true);
         guiGraphics.pose().pushPose();
         guiGraphics.pose().scale(0.8f, 0.8f, 0.8f);
-        guiGraphics.drawString(Minecraft.getInstance().font, player.getName(), (int) (45 / 0.8), (int) ((height - 32) / 0.8), 0xffffffff);
         guiGraphics.pose().popPose();
         guiGraphics.pose().pushPose();
         guiGraphics.pose().popPose();
