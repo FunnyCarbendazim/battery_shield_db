@@ -56,7 +56,7 @@ public class PlayerShieldOverlay implements IGuiOverlay {
         ILivingEntityA iliving = ((ILivingEntityA) (player));
         float max = iliving.battery_shield$getMaxShield();
         float shield = iliving.battery_shield$getShield();
-        RenderUtils.renderBar(guiGraphics, 28, height - 25, 96, 6, AssetsManager.SHIELD_BORDER, ShieldUtil.getShieldTypeByValue(max), shield, max, true);
+        RenderUtils.renderBar(guiGraphics, 22, height - 22, 96, 6, AssetsManager.SHIELD_BORDER, ShieldUtil.getShieldTypeByValue(max), shield, max, true);
         guiGraphics.pose().pushPose();
         guiGraphics.pose().scale(0.8f, 0.8f, 0.8f);
         guiGraphics.pose().popPose();
